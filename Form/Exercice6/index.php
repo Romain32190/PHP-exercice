@@ -1,6 +1,6 @@
 
     <?php
-    if($_POST ['genre'] === null && $_POST['nom'] === null && $_POST['prenom'] === null) {
+    if($_POST ['genre'] === null || $_POST['nom'] === null|| $_POST['prenom'] === null) {
 
     echo  '<form action="index.php" method="POST">
       <select name="genre">
