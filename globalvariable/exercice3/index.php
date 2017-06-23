@@ -16,5 +16,17 @@
 
     </form>
 
+    <?php
+		if($_POST['login']){
+		    setcookie('login', $_POST['login'], time() + 365*24*3600, null, null, false, true);!
+		    header("Location: index.php");
+		}if($_POST['pass']){
+		    setcookie('pass', $_POST['password'], time() + 365*24*3600, null, null, false, true);!
+		    header("Location: index.php");
+		}
+	?>
+
+
+
   </body>
 </html>
